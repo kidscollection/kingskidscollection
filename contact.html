@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kings Kids Collection</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff2f6; /* Light pink background */
+            color: #333;
+        }
+
+        header {
+            background-color: #ff1493; /* Bright pink header */
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: #ff66b2; /* Lively pink navigation */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 25px;
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ff1493; /* Bright pink hover effect */
+            transition: 0.3s;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #ff66b2; /* Vibrant pink section */
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .contact h2 {
+            font-size: 3.2em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact p {
+            font-size: 1.4em;
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            max-width: 600px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: 1px solid #ff1493;
+        }
+
+        .contact-form button {
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff3385; /* Darker pink on hover */
+        }
+
+        .contact-info {
+            background-color: #fff2f6; /* Soft pink background */
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-info h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .rating-section {
+            background-color: #ff66b2;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .rating-section h3 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .rating-section .rating {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .rating-section button {
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ff66b2; /* Vibrant pink footer */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kings Kids Collection</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Whether you have a question or need assistance, feel free to reach out to us.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <form action="mailto:kingskidscollection@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="contact-info">
+        <h3>Our Contact Details</h3>
+        <p>Email: <a href="mailto:kingskidscollection@gmail.com">kingskidscollection@gmail.com</a></p>
+        <p>Phone: <strong>0757893130</strong></p>
+        <p>We are open Monday - Sunday, 8:00 AM to 9:00 PM</p>
+    </div>
+
+    <!-- Rating Section -->
+    <div class="rating-section">
+        <h3>Rate Our Service</h3>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <button onclick="alert('Thank you for your rating!')">Submit Rating</button>
+    </div>
+
+    <footer>
+        © 2024 Kings Kids Collection. Back to <a href="index.html">Home</a>.
+    </footer>
+</body>
+</html>

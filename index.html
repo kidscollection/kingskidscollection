@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kings Kids Collection</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff2f6; /* Light pink background */
+            color: #333;
+        }
+
+        header {
+            background-color: #ff1493; /* Bright pink header */
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: #ff66b2; /* Lively pink navigation */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 25px;
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ff1493; /* Bright pink hover effect */
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ff66b2; /* Vibrant pink hero section */
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            background-image: url('https://via.placeholder.com/1200x600/ff66b2/ffffff?text=Kings+Kids+Collection'); /* Example background */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h2 {
+            font-size: 3.2em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            margin-top: 20px;
+        }
+
+        /* Marquee for Subheading */
+        .marquee {
+            background-color: #ff1493; /* Pink background for marquee */
+            color: white;
+            font-size: 1.4em;
+            padding: 10px;
+            margin-top: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Product Grid */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+            background-color: #fff2f6; /* Soft pink background */
+        }
+
+        .product {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: calc(20% - 30px); /* Adjusted width for more products */
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #ff1493; /* Bright pink text for product names */
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .product p {
+            font-size: 1.2em;
+            color: #ff1493;
+            margin-bottom: 20px;
+        }
+
+        .product button {
+            background-color: #ff1493; /* Bright pink button */
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .product button:hover {
+            background-color: #ff3385; /* Darker pink on hover */
+        }
+
+        .product select, .product input {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            width: 100%;
+            border: 1px solid #ff1493;
+        }
+
+        /* Business Hours Section */
+        .business-hours {
+            background-color: #ff66b2; /* Light pink background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5em;
+            margin-top: 40px;
+        }
+
+        footer {
+            background-color: #ff66b2; /* Vibrant pink footer */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+       
+    </div>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <span>New arrivals! Explore our wide collection of baby clothes, including sweaters, dresses, and more!</span>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.a7Ffhymfukw2fSuXLxh-1wAAAA&pid=Api&P=0&h=220" alt="Sweater">
+            <h3>Baby rompers</h3>
+            <p>from Ksh 100</p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.kbtTsH0sKfh-FJnYEKRkOAHaHa&pid=Api&P=0&h=220" alt="trousers">
+            <h3>Baby trousers</h3>
+            <p>from Ksh 200</p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.yc-9sJ3FOmgfpO6uzFFeRwHaHa&pid=Api&P=0&h=220" "https://tse4.mm.bing.net/th?id=OIP.T59Nt9EY_68Ed5PDVmSkEwHaHa&pid=Api&P=0&h=220"alt="Princess Dress">
+            <h3> Dresses</h3>
+            <p>from Ksh 600</p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.j3T80ggi1I5hGc6oV4KY5gHaHa&pid=Api&P=0&h=220" alt="Jumpsuit">
+            <h3>Baby Jumpsuit</h3>
+            <p>from Ksh 300</p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.xguh2_omA3ElxDzzGsUZ8wHaFz&pid=Api&P=0&h=220" alt="Tights">
+            <h3>Baby Tights</h3>
+            <p>from Ksh 100</p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.GE6pJVCe1x1re9X_T6JV-AHaHa&pid=Api&P=0&h=220" alt="Socks">
+            <h3>Baby Socks</h3>
+            <p>from Ksh 50</p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.U5Zr1sA7d_ADQ4meeOn9rgHaHa&pid=Api&P=0&h=220" alt="Blanket">
+            <h3>Baby Blanket</h3>
+            <p>KSh 1400</p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.LROAzK6Yq8s7HRlDsiuPcwHaHa&pid=Api&P=0&h=220" alt="Shoes">
+            <h3>Baby Shoes</h3>
+            <p>KSh </p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+    </div>
+	 <!-- Product 9 -->
+        <div class="product">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.HPUIQPoS86HXx65CYhEXhgHaHa&pid=Api&P=0&h=220" alt="onesies">
+            <h3>Baby onesies</h3>
+            <p>from 100 </p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+    </div>
+	 <!-- Product 10 -->
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.84NcbyPFIALFkyEDOarksAHaHa&pid=Api&P=0&h=220" alt="bag">
+            <h3>Baby bag</h3>
+            <p>from 1400 </p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+ <!-- Product 11 -->
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.kGwIh49UzdWJTBbXERXKbgHaHa&pid=Api&P=0&h=220" alt="shorts">
+            <h3>Baby shorts</h3>
+            <p>from Ksh 200 </p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="number" value="1" min="1" max="10" />
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <!-- Business Hours Section -->
+    <div class="business-hours">
+        <p>We are open Monday - Sunday from 8:00 AM to 9:00 PM</p>
+    </div>
+
+    <footer>
+        © 2024 Kings Kids Collection. Back to <a href="index.html">Home</a>.
+    </footer>
+</body>
+</html>
